@@ -21,6 +21,9 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+# targetSystem -- Target OS for this deployment (possible values: linux, windows)
+targetSystem: "linux"
+
 serviceAccount:
   create: true
   annotations: {}
