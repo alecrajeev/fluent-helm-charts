@@ -219,3 +219,10 @@ config:
         Time_Keep Off
         Time_Key time
         Time_Format %Y-%m-%dT%H:%M:%S.%L
+
+mounts:
+ conf: /fluent-bit/etc/fluent-bit.conf
+ customParsers:  /fluent-bit/etc/custom_parsers.conf
+ logPath: /var/log
+ libPath: /var/lib/docker/containers
+ etcMachineId: /etc/machine-id
