@@ -5,10 +5,10 @@ entries:
       artifacthub.io/changes: |
         - add custom annotations on dashboards configmap
     apiVersion: v1
-    appVersion: 1.7.1
-    created: "2021-03-17T12:42:43.105991297Z"
+    appVersion: 1.7.2
+    created: "2021-03-18T14:00:35.281035524Z"
     description: Fast and lightweight log processor and forwarder or Linux, OSX and BSD family operating systems.
-    digest: f7010728e720d3220dd2b949d3caaeaa13fabead30d97cd3474881c42f94e852
+    digest: 77bb1c9b2f59efc3b10cd34fe513454cc77f6c1a507a4ced01ad2d2dff28b6ac
     home: https://fluentbit.io/
     icon: https://fluentbit.io/assets/img/logo1-default.png
     keywords:
@@ -26,6 +26,6 @@ entries:
     sources:
     - https://github.com/fluent/fluent-bit/
     urls:
-    - https://github.com/alecrajeev/helm-charts/releases/download/fluent-bit-0.13.0/fluent-bit-0.13.0.tgz
-    version: 0.13.0
-generated: "2021-03-17T12:42:42.622032448Z"
+    - https://github.com/alecrajeev/helm-charts/releases/download/fluent-bit-0.13.1/fluent-bit-0.13.1.tgz
+    version: 0.13.1
+generated: "2021-03-18T14:00:35.104315304Z"
