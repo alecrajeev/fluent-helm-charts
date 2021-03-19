@@ -6,9 +6,9 @@ entries:
         - add custom annotations on dashboards configmap
     apiVersion: v1
     appVersion: 1.7.2
-    created: "2021-03-18T14:00:35.281035524Z"
+    created: "2021-03-19T00:47:02.848289916Z"
     description: Fast and lightweight log processor and forwarder or Linux, OSX and BSD family operating systems.
-    digest: 77bb1c9b2f59efc3b10cd34fe513454cc77f6c1a507a4ced01ad2d2dff28b6ac
+    digest: a5dad46b9273dfafac7515b8ca0b38f35c994dc9b9b390d4bf61839fc40221a8
     home: https://fluentbit.io/
     icon: https://fluentbit.io/assets/img/logo1-default.png
     keywords:
@@ -26,6 +26,24 @@ entries:
     sources:
     - https://github.com/fluent/fluent-bit/
     urls:
-    - https://github.com/alecrajeev/helm-charts/releases/download/fluent-bit-0.13.1/fluent-bit-0.13.1.tgz
-    version: 0.13.1
-generated: "2021-03-18T14:00:35.104315304Z"
+    - https://github.com/alecrajeev/helm-charts/releases/download/fluent-bit-0.14.0/fluent-bit-0.14.0.tgz
+    version: 0.14.0
+  fluentd:
+  - apiVersion: v2
+    appVersion: v1.12.0
+    created: "2021-03-19T00:47:03.092604133Z"
+    description: A Helm chart for Kubernetes
+    digest: 70d4eb95fd2ba2b008e52967845fc330056c4d6e9385441d9fe5947a15ca5c1b
+    home: https://www.fluentd.org/
+    icon: https://www.fluentd.org/assets/img/miscellany/fluentd-logo_2x.png
+    maintainers:
+    - email: eduardo@treasure-data.com
+      name: edsiper
+    name: fluentd
+    sources:
+    - https://github.com/fluent/fluentd/
+    - https://github.com/fluent/fluentd-kubernetes-daemonset
+    urls:
+    - https://github.com/alecrajeev/helm-charts/releases/download/fluentd-0.2.3/fluentd-0.2.3.tgz
+    version: 0.2.3
+generated: "2021-03-19T00:47:02.399748374Z"
