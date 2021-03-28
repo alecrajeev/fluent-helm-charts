@@ -95,6 +95,8 @@ dashboards:
   labelKey: grafana_dashboard
   annotations: {}
 
+livenessProbeExec: {}
+readinessProbeExec: {}
 
 livenessProbe:
   httpGet:

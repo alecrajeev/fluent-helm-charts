@@ -46,13 +46,23 @@ containers:
         protocol: {{ .protocol }}
       {{- end }}
     {{- end }}
+    {{- if .Values.livenessProbeExec }}
+    livenessProbe:
+      {{- toYaml .Values.livenessProbeExec | nindent 6 }}
+    {{- else }}
     {{- if .Values.livenessProbe }}
     livenessProbe:
       {{- toYaml .Values.livenessProbe | nindent 6 }}
     {{- end }}
+    {{- end }}
+    {{- if .Values.readinessProbeExec }}
+    readinessProbe:
+      {{- toYaml .Values.readinessProbeExec | nindent 6 }}
+    {{- else }}
     {{- if .Values.readinessProbe }}
     readinessProbe:
       {{- toYaml .Values.readinessProbe | nindent 6 }}
+    {{- end }}
     {{- end }}
     resources:
       {{- toYaml .Values.resources | nindent 6 }}
