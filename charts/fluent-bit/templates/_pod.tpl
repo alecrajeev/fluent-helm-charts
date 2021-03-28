@@ -46,13 +46,25 @@ containers:
         protocol: {{ .protocol }}
       {{- end }}
     {{- end }}
-    {{- if .Values.livenessProbe }}
+    {{- if .Values.livenessProbe.enabled }}
     livenessProbe:
-      {{- toYaml .Values.livenessProbe | nindent 6 }}
+      {{- if .Values.livenessProbe.probe }}
+      {{- toYaml .Values.livenessProbe.probe | nindent 6 }}
+      {{- else }}
+      httpGet:
+        path: /
+        port: http
+      {{- end }}
     {{- end }}
-    {{- if .Values.readinessProbe }}
+    {{- if .Values.readinessProbe.enabled }}
     readinessProbe:
-      {{- toYaml .Values.readinessProbe | nindent 6 }}
+      {{- if .Values.readinessProbe.probe }}
+      {{- toYaml .Values.readinessProbe.probe | nindent 6 }}
+      {{- else }}
+      httpGet:
+        path: /
+        port: http
+      {{- end }}
     {{- end }}
     resources:
       {{- toYaml .Values.resources | nindent 6 }}

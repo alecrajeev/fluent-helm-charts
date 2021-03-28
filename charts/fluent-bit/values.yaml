@@ -97,14 +97,20 @@ dashboards:
 
 
 livenessProbe:
-  httpGet:
-    path: /
-    port: http
+  enabled: true
+  probe:
+    {}
+    # httpGet:
+    #   path: /
+    #   port: http
 
 readinessProbe:
-  httpGet:
-    path: /
-    port: http
+  enabled: true
+  probe:
+    {}
+    # httpGet:
+    #   path: /
+    #   port: http
 
 resources:
   {}
